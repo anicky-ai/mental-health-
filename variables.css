@@ -1,0 +1,25 @@
+/*
+ * FILE: variables.css
+ * DESKRIPSI: CSS Custom Properties & Base Styles
+ */
+
+:root {
+    --color-bg: #FDFBF7;
+    --color-text: #27374D;
+    --color-primary: #A4C3B2;
+    --color-primary-dark: #6B9080;
+}
+
+body { 
+    background-color: var(--color-bg); 
+    color: var(--color-text); 
+    overflow-x: hidden; 
+}
+
+html { scroll-behavior: smooth; }
+
+/* Scrollbar Premium */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary-dark); }
